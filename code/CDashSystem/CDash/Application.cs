@@ -4,14 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using DashboardEngine;
+
 
 namespace CDash
 {
     internal class Application
     {
-        public void initialise()
+        public Application()
         {
 
+        }
+
+        public void initialise()
+        {
+            
         }
 
         public void execution()
@@ -22,6 +29,20 @@ namespace CDash
         public void gc()
         {
 
+        }
+
+        private Dashboard _dashboard = null;
+
+        public Dashboard Dashboard
+        {
+            get
+            {
+                return this._dashboard;
+            }
+            set
+            {
+                this._dashboard = value;
+            }
         }
 
 
